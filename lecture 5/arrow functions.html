@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Arrow functions:-compact way of writing a function.
+
+        const functionName = (parameter1,parameter2....) =>{
+            //do some work
+        }
+
+        const sum=(a,b) =>{
+            return a+b;
+        }
+        */
+
+        //sum function
+        function sum(a,b){
+            return a+b;
+        }
+        c=sum(6,7);
+        console.log(c)
+
+        //multiplication function.
+        function mul(a,b){
+            return a*b;
+        }
+        c=mul(6,7);
+        console.log(c)
+
+        //sum of two numbers by arrow function
+        const arrowsum=(a,b) =>{
+            console.log(a+b)
+        }
+        console.log(arrowsum)
+        arrowsum(5,7)
+
+        //mul of two numbers by arrow function
+        const arrowmul=(a,b) =>{
+            console.log(a*b)
+        }
+        arrowmul(5,7)
+
+        const printhello = () => {
+        console.log("hello");
+        }
+        console.log(printhello())
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //example of template literals
+        let obj={
+            item:'pen',
+            price:10,
+        };
+        let output=`the cost of ${obj.item} is ${obj.price} rupees.`;
+        console.log(output);
+
+
+        //template literals in js
+        /*
+        A way to have embeded exdpressions in strings
+        `this is a template literal`
+
+        //string interpolation:-
+        To create strings by doing substitution of placeholders
+        'string text ${expression} string text'
+        */
+        //template literals
+        let specialstring=`this is a template literal ${1+2+3}`;
+        console.log(specialstring);
+
+        //escape characters
+        console.log("gopal\nsharma")
+        console.log("gopal\tsharma")
+
+
+        //escape character ki length hamesha ek single character ki tarah count hoti hai
+        //example
+        let str="gopal\n\tsharma"
+        console.log(str)
+        console.log(str.length)
+    </script>
+</body>
+</html>

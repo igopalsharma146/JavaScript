@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+            text-decoration: line-through;
+            background-color: yellow;
+        }
+        body{
+            background-color: pink;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Demo by apna college.</h1>
+    <h4>Topic 1: starter code.</h4>
+    <p>Let's Learn about dom concepts in details.</p>
+    <button>click me!</button>
+    <script>
+        //DOM(document object model) :when a wab page is loaded, the browser creates a document object model(DOM)of the page.
+        /*
+        |               window
+        |                  |
+        |               document
+        |                  |
+        |                 html
+        |                /    \
+        |               /      body --------script
+        |              /       /  
+        |            head    div(img,h1,p,div)   
+        |          / \  /\    
+        |      meta meta title link
+        */
+        // console.log--> print
+        //console.dir->documnet --> proper method to print the documnets.
+        console.log(window.document)
+        console.dir(window.document)
+        //here we are know that the window object is globel. so here no need to write the window.
+        console.log(document)
+        console.dir(document)
+        console.log(document.body)
+        console.dir(document.body)
+
+
+        //dynamic changes manipulation ke liye hum DOM ka use karte hai.
+
+        //changing the background color.
+        //console.dir(document.body.style.background="green")
+
+
+        //changing the heading.
+        //console.dir(document.body.childNodes[3].innerText = "GOPAL SHARMA")
+    </script>
+</body>
+</html>

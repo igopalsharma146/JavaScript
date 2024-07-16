@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: blue;
+            text-decoration: line-through;
+            background-color: yellow;
+        }
+        body{
+            background-color: pink;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">DOM Demo by apna college.</h1>
+    <h4 id="one">Topic 1: starter code.</h4>
+
+    <h3 class="two">Heading 1</h3>
+    <h3 class="two">Heading 2</h3>
+    <h3 class="two">Heading 3</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eligendi ullam ad, aliquam aperiam, error laborum similique voluptatum in quam natus! Quaerat nemo quibusdam maiores, praesentium deserunt pariatur. Sit, dolorem!
+    </p>
+    <p>Let's Learn about dom concepts in details.</p>
+    
+    <button>click me!</button>
+</body>
+<script>
+    /*
+    //Properties:
+    tagName:return tag for element nodes.
+    innerText:return the text content of the element and all itd childrens.
+    innerHTML:returns the plain text or HTML contents in the element
+    textContent:return textual content even for hidden elements.
+    */
+    let firstElement = document.querySelector("p")
+    console.log(firstElement)
+    console.dir(firstElement)
+    console.log("tag name =",firstElement.tagName)
+
+
+    let AllElement = document.querySelectorAll("p")
+    console.log(AllElement)
+    console.dir(AllElement)
+    console.log("tag name =",firstElement.tagName)
+
+
+    {
+        let firstElement = document.querySelector("#one")
+        console.log(firstElement)
+        console.dir(firstElement)
+        console.log("tag name =",firstElement.tagName)
+    
+        let AllElement = document.querySelectorAll("#one")
+        console.log(AllElement)
+        console.dir(AllElement)
+        console.log("tag name =",firstElement.tagName)
+
+    }
+
+    {
+        let firstElement = document.querySelector(".two")
+        console.log(firstElement)
+        console.dir(firstElement)
+        console.log("tag name =",firstElement.tagName)
+
+    
+        let AllElement = document.querySelectorAll(".two")
+        console.log(AllElement)
+        console.dir(AllElement)
+        console.log("tag name =",firstElement.tagName)
+
+    }
+
+</script>
+</html>

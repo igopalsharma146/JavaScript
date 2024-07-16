@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Arrays:-Collection of items;
+
+        property:jo kuch value return karti hai.ex->length
+        method:jo kuch kaam karta hai ex->log
+        */
+        //create arrays
+        let heroes=["ironman","thor","batman","hulk","shaktiman"]
+        let marks=[98,45,78,67,88]
+        let info=["rahul",87,"delhi"]
+        console.log(heroes);
+        console.log(marks);
+        console.log(info);
+        console.log(heroes.length);
+        console.log(marks.length);
+        console.log(info.length);
+
+        //array apne aap me koi type nahi hota hai.That mean hum jab array ka type print karayenge to type array print hoke nahi aayega.
+        //array ek object type hota hai.
+
+        //for of  
+        let cities=["delhi","poone","mumbai","boontoli","palwal","gurgaon"]
+        console.log(cities);
+        for (let city of cities){
+            console.log(city);
+        }
+        {
+            let cities=["delhi","poone","mumbai","boontoli","palwal","gurgaon"]
+            console.log(cities);
+            for (let city of cities){
+                console.log(city.toUpperCase())
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const student={
+        fullname:"gopal sharma",
+        age:20,
+        cgpa:8.2,
+        ispass:true
+    };
+    console.log(typeof student)
+    console.log(student["fullname"])
+    console.log(student["age"]);
+    console.log(student.age);
+    console.log(student.cgpa);
+    
+    student["age"]=student["age"]+1;
+    console.log("updated age=",student.age)
+    student["fullname"]=student["fullname"]+" from boontoli";
+    console.log("updated fullname=",student.fullname)
+
+    student["gaav"]="boontoli"
+    console.log(student["gaav"])
+    //value ko change karne ke liye hum value ko assignment operatoe ke throw change kar sakte hai.
+    {
+        let a=5;
+        console.log("a=",a)
+    a=9;
+    console.log("a=",a)
+    }
+</script>
+</html>

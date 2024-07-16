@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //java script ki string immutable hoti hai.
+        //immutable ka matlab hai ki vo cheej kabhi change nahi hoti hai.
+        //agar hame koi bhi change karna hai to hame new string create karni hogi.
+        {
+            {
+                let str="gopal sharma"
+                str.toUpperCase()
+                console.log(str)
+                //here we are got our name in small letters because of here we are not storing the output in other string. And we are tring to printing the str then we are got the original string.(string could not change.)
+            }
+            {
+                let str="neeraj sharma"
+                str=str.toUpperCase()
+                console.log(str)
+            }
+        }
+        /*
+        String methods in js:-
+                                there are built-in functions to manipulate a string.
+                                . str.toUperCase()
+                                . str.toLowerCase()
+                                . str.trim()   -> Remove white spaces
+
+        //method:-method is a block of code jo hamare liye koi kaam karke deta hai.
+        */
+        let str="gopal sharma"
+        let str1=str.toUpperCase()
+        console.log(str1)
+
+        let str2="I AM FROM ALWAR."
+        let str3=str2.toLowerCase()
+        console.log(str3)
+
+        {
+            let str2="toLocaleLowerCase"
+            let str3=str2.toLocaleLowerCase()
+            console.log(str3)
+        }
+        
+        //trim are remove the white spaces.
+        //trim starting ki or end ki white spaces ko remove karta hai.
+        {
+            let str="    Now, I Am Doing B.tech.    "
+            console.log(str.trim())
+        }
+        {
+            let str="    FROM MITRC COLLEGE,    "
+            console.log(str.trimEnd())
+        }
+        {
+            let str="    ALWAR(RAJASTHAN).    "
+            console.log(str.trimStart())
+        }
+
+        //some more methods
+        /*
+        . str.slice(start,end?)  ->//returns part of string.
+        . str1.concat(str2)      ->//joins string2 with str1.
+        . str.replace(searchVal,newVal)
+        . strcharAt(idx)
+        */
+
+        //string slicing
+        let str4="ram aam khata hai."
+        console.log(str4.slice(1,5))
+        console.log(str4.slice(6,9))
+        console.log(str4.slice(2,9))
+        console.log(str4.slice(0,))
+        console.log(str4.slice())
+        console.log(str4.slice(4))
+        console.log(str4.slice(-10,-1))
+        console.log(str4.slice(-20,-1))
+        console.log(str4.slice(-11,-7))
+        console.log(str4.slice(-9,-8))
+
+        //string concatanation
+        let str5="gopal"
+        let str6=" shyam "
+        let str7=" and ghanshyam"
+        let res=str5.concat(str6,str7);
+        let res1=str6.concat(str5,str7);
+        console.log(res)
+        console.log(res1)
+        //second way
+        {
+            let str5="gopal"
+            let str6=" shyam"
+            let str7=" and ghanshyam"
+            let res=str5+str6+str7;
+            console.log(res)
+        }
+
+        {
+            let str5="gopal"
+            let str6=" shyam"
+            let str7=" and ghanshyam."
+            let res=str5 +str6+str7+" we are friends.";
+            console.log(res)
+        }
+
+        //replace in javascript.
+        let str8="hello"
+        console.log(str8.replace("h","m"))
+        console.log(str8.replace("h","y"))
+        console.log(str8.replace("h","k"))
+        console.log(str8.replace("he","na"))
+        console.log(str8.replace("hell","g"))
+        //replacement hamesha ek baar hi hoti hai.
+        let str9="lelelellelele"
+        console.log(str9.replace("le","y"))
+
+        //replaceAll se all value replace ho jati hai
+        {
+            let str9="lelelellelele"
+            console.log(str9.replaceAll("le","y"))
+        }
+
+        //charAt method
+        let string="I Love JS"
+        console.log(string.charAt(0));
+        console.log(string.charAt(1));
+        console.log(string.charAt(2));
+        console.log(string.charAt(3));
+        console.log(string.charAt(4));
+        console.log(string.charAt(5));
+    </script>
+</body>
+</html>

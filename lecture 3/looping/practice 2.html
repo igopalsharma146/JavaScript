@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create a game where you start with any rendom game number. Ask the user to keep guessing the game number untill the user enters correct value.
+        //praqctice question 02
+        let guessNum=25;
+        let num=prompt("Guess the number")
+        while(num!=guessNum){//== are use in string format
+            num=prompt("you entered wrong number. Guess again.")
+        }
+        console.log("Congratulation, you entered the right number.");
+
+        {
+            let guessNum="35";
+            let num=prompt("Guess the number")
+            while(num!==guessNum){//== are use in string format
+                num=prompt("You entered wrong number. Guess again.")
+            }
+            console.log("Congratulation, you entered the right number.");
+        }
+    </script>
+</body>
+</html>

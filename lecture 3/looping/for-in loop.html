@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for-in loop
+        /*
+        for (let key on objVar)
+        {
+            //do some work.
+        }
+        */
+
+        //example of for in loop
+        let student= {
+            name:"gopal sharma",
+            age:20,
+            cgpa:8.77,
+            ispass:true,
+        };
+        for (let i in student){
+            console.log(i);
+        }
+
+    {
+        let student= {
+        name:"gopal sharma",
+        age:20,
+        cgpa:8.77,
+        ispass:true,
+        };
+        for (let key in student){
+            console.log("key=",key);
+        }
+    }
+    
+    {
+        let student= {
+        name:"gopal sharma",
+        age:20,
+        cgpa:8.77,
+        ispass:true,
+        };
+        for (let key in student){
+            console.log("key=",key,"values=", student[key]);
+        }
+    }
+    </script>
+</body>
+</html>

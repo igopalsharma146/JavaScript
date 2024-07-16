@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        For each loop in array
+        array.forEach(call back function )
+        
+        CallbackFunction:here,it is a function to execute for each element in array.
+
+        *A callback is a function passed as an argument to another function.
+
+NOTE:-arr.forEach() method use for only arrays.
+if we will try to run it for string then it will be show him the error.
+
+QUESTION:higher order function/method kya hote hai.
+ANS:forEach() method ko hum higher order method kah sakte hai
+higher order function wo hote hai jo dusre function ko as a parameter le lete hai,ya fir kisi function ko return kar rahe hote hai.
+
+
+        arr.forEach((val) =>{
+            console.log(val);
+        })
+
+        {
+            //java script ke under hum function ko pass bhi kar sakte hai or return bhi kar sakte hai.
+            function abc(){
+                console.log("hello")
+            }
+
+            function myfunc(abc){
+                return abc;
+            }
+        }
+        */
+        let array=[1,2,3,4,5,34,3,5,6]
+        array.forEach(function printval(val){
+            console.log(val);
+        });
+
+        {
+            let array=[1,2,3,4,5,34,3,5,6]
+            array.forEach((val)=>{
+                console.log(val)
+            })
+        }
+
+        let arr=["pune","delhi","mumbai","alwar","rajasthan","jaipur","boontoli"]
+        arr.forEach((val,ind,arr) =>{
+            console.log(val.toLocaleUpperCase(),ind,arr)
+        });
+    </script>
+</body>
+</html>

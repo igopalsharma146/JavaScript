@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=20;
+        if (age>=18){
+            console.log("you can vote.")
+        }
+        if (age<18){
+            console.log("you can't vote.")
+        }
+
+        //conditional statement
+        let mode ="dark";
+        let color;
+        if(mode==="dark")
+        {
+            color="Black"
+        }
+        if(mode==="light")
+        {
+            color="white"
+        }
+        console.log(color)
+
+
+        // if-else statement
+    {
+        let mode ="light";
+        let color;
+        if(mode==="dark")
+        {
+            color="Black"
+        }
+        else
+        {
+            color="white"
+        }
+        console.log(color)
+    }
+
+    {
+        let age=16;
+        if (age>=18){
+            console.log("you can vote.")
+        }
+        else{
+            console.log("you can't vote.")
+        }
+    }
+
+    //odd or even
+    let num=9
+    if(num%2===0)
+    {
+        console.log(num,"is even number")
+    }
+    else{
+        console.log(num,"is odd number")
+    }
+
+
+//else if condition
+{
+    let age=18;
+    if(age<=18)
+    {
+        console.log("junior")
+    }
+    else if(age>30)
+    {
+        console.log("senior")
+    }
+    else{
+        console.log("middle")
+    }
+}
+
+{
+    let mode="red"
+    let color;
+    if(mode==="dark")
+    {
+        color="black"
+    }
+    else if (mode==="blue")
+    {
+        color="blue";
+    }
+    else if (mode==="red")
+    {
+        color="red";
+    }
+    else if (mode==="pink")
+    {
+        color="pink";
+    }
+    else{
+        color="white"
+    }
+    console.log(color)
+}
+
+
+//turnary operators
+// condition ? true output : false output
+// age > 18 ? "adult" : "not adult"
+{
+    let age=20;
+    let result = age > 18 ? "adult" : "not adult";
+    console.log(result)
+}
+
+// second way
+{
+    let age=20;
+    age > 18 ? console.log("adult") : console.log("not adult");
+}
+
+
+//switch case in js
+const expr = "papayas";
+switch (expr)
+{
+    case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+    case 'mangoes':
+    case 'papayas':
+    console.log('Mangoes or papayas are $2.79 a pound.');
+    break;
+    default:
+    console.log('sorry , we are out of ${expr}.');
+}
+//read more example in mdn website
+    </script>
+</body>
+</html>

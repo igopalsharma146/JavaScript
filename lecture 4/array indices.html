@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array indices
+        //arr[0],arr[1],arr[2]......
+        let marks=[98,45,78,67,88]
+        console.log(marks)
+        console.log(marks[0])
+        console.log(marks[1])
+        console.log(marks[2])
+        console.log(marks[3])
+
+        //array me hum value ko change kar sakte hai.
+        let mark=[98,45,78,67,88]
+        mark[0]=88;
+        console.log(mark)
+
+        //lekin hum strings me isa nahi kar sakte. strings me yah possible anhi hai.
+        //strings js ke under immutable hoti hai.inhe hum change nahi kar sakte hai.
+        //but arrays are the mutable.
+        let str="hello"
+        str[0]="n";
+        console.log(str)
+
+
+        //using for loop 
+        let heroes=["ironman","thor","batman","hulk","shaktiman"]
+        for(i=0;i<heroes.length;i++)
+        {
+            console.log(heroes[i]);
+        }
+
+        //using for of loop
+        console.log("using for of loop")
+        for(let hero of heroes){
+            console.log(hero)
+        }
+    </script>
+</body>
+</html>

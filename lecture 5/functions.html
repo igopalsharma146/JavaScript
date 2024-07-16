@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //functions in js:-Block of code that performs a specific task, can be invoked whenever needed.
+
+        /*function defination:-
+        
+        function functionName(){
+            //do some work
+        }
+        */
+
+        //function call:- functionName();
+
+        /*function functionName(parameter1,parameter2....){
+        
+            //do some work
+        }
+        */
+
+        //function parameters -->like local variables -->block scope of function.
+        //defining the function.
+        function myfunction() {
+            console.log("welcome to mitrc college")
+            console.log("We are learning javascript")
+        }
+        myfunction();  //calling the function
+
+
+        function gopal(msg){   
+            //parameter -> input
+            console.log(msg);
+        }
+        gopal("I love js"); //arguments
+
+        {
+            function gopal(msg,n){   
+                //parameter -> input
+                console.log(msg+n);
+                console.log(msg,n);
+                console.log(msg*n); //NaN ->not a number
+            }
+            gopal("I love js",100); //arguments
+        }
+    </script>
+</body>
+</html>

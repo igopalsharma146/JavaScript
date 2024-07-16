@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: blue;
+            text-decoration: line-through;
+            background-color: yellow;
+        }
+        body{
+            background-color: pink;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">DOM Demo by apna college.</h1>
+    <h4 id="one">Topic 1: starter code.</h4>
+
+    <h3 class="two">Heading 1</h3>
+    <h3 class="two">Heading 2</h3>
+    <h3 class="two">Heading 3</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eligendi ullam ad, aliquam aperiam, error laborum similique voluptatum in quam natus! Quaerat nemo quibusdam maiores, praesentium deserunt pariatur. Sit, dolorem!
+    </p>
+    <p>Let's Learn about dom concepts in details.</p>
+    <button>click me!</button>
+    <script>
+        /*
+    //selecting with id:
+    document,getElementById("myId")
+
+    //selecting with class:
+    document,getElementByClassName("myClass")
+    
+    //selecting with Tag:
+    document,getElementByTagName("p")
+    
+    */
+
+    //get Element by id
+    console.log(document.getElementById("one"))
+    console.dir(document.getElementById("one"))
+
+    //if koi id wala element exist nahi karta hai tab null print hoke aata hai.
+    console.log(document.getElementById("three"))
+
+
+
+
+    //Get element by class name.
+    console.log(document.getElementsByClassName("two"))
+    console.log(document.getElementsByClassName("two"))
+
+    //if koi className wala element exist nahi karta hai tab empty HTMLCollection print hoke aata hai.
+    console.log(document.getElementsByClassName("four"))
+
+
+
+//get element by tag
+        let tag=document.getElementsByTagName("p")
+        console.log(tag)
+        console.dir(document.getElementsByTagName("p"))
+
+
+
+//Query selector
+    /*
+        document.querySelector("myId / myClass / tag")
+        //returns first element
+
+        document.querySelectorAll("myId / myClass / tag")
+        //returns a nodeList
+    */
+    //query selector hamareliye nodelist return karta hai 
+    let firstElement = document.querySelector("p")
+    console.log(firstElement)
+    console.dir(firstElement)
+
+    let AllElement = document.querySelectorAll("p")
+    console.log(AllElement)
+    console.dir(AllElement)
+
+    {
+        let firstElement = document.querySelector("#one")
+        console.log(firstElement)
+        console.dir(firstElement)
+    
+        let AllElement = document.querySelectorAll("#one")
+        console.log(AllElement)
+        console.dir(AllElement)
+    }
+
+    {
+        let firstElement = document.querySelector(".two")
+        console.log(firstElement)
+        console.dir(firstElement)
+    
+        let AllElement = document.querySelectorAll(".two")
+        console.log(AllElement)
+        console.dir(AllElement)
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+NOTE:-map hamare liye new array return karke deta hai or forEach ke under koi bhi new array create nahi hota hai. wo hame wahi per hi value create karke deta hai.
+
+        MAP:
+            Create a new array with the result of some operation. The value its callback returns are used to form new array.
+
+
+            arr.map(callbackfnx(value,index,array))
+
+            let newArr=arr.map((val)=>{
+                return val*2;
+            })
+
+
+        FILTER METHOS:
+                    Create a new array of elements that give a true of a condition/filter.
+                    Eg:all even elements.
+            
+            let newarray=arr.filter((val)=>{
+                return val%2===0
+            })
+
+
+        REDUCE METHOD:-
+                        Perorms some operations & reduces the array to a single value. it returns that single value.
+
+
+        (method) Array<number>.reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number (+2 overloads)
+        */
+
+        //MAP METHOD
+        let numbers=[22,3,54,6,687,8,90]
+        numbers.map((val)=>{
+            console.log(val)
+        })
+
+        {
+            let numbers=[22,3,54,6,687,8,90]
+            let newarray=numbers.map((val)=>{
+                return val*2
+            })
+            console.log(newarray)
+            console.log(numbers)
+        }
+
+
+        //FILTER METHOD
+        let arr=[3,2,8,3,36,5,4,7,9,16]
+        let evenarray=arr.filter((val)=>{
+            return val%2===0
+        })
+        console.log(arr)
+        console.log("even numbers:",evenarray)
+
+        {
+            let arr=[3,2,8,3,36,5,4,7,9,16]
+            let evenarray=arr.filter((val)=>{
+                return val>3
+            })
+            console.log(arr)
+            console.log("greater of 3:",evenarray)
+        }
+
+
+        //REDUCE METHOD
+        let array=[3,4,5,77,6]
+        let sum=array.reduce((res,curr)=>{
+            return res+curr
+        });
+        console.log(sum)
+
+        {
+            let array=[3,4,5,77,6]
+            let sum=array.reduce((pre,curr)=>{
+                return pre>curr ? pre:curr
+            });
+            console.log(array)
+            console.log(sum)
+    
+        }
+    </script>
+</body>
+</html>
